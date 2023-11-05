@@ -3,6 +3,7 @@ import { HiMiniPhone, HiUser } from "react-icons/hi2"
 import { MdLocationPin } from "react-icons/md";
 import { BiMaleFemale } from "react-icons/bi";
 import { GiWorld } from "react-icons/gi";
+import { LuLogIn } from "react-icons/lu";
 
 
 import { Button, Modal } from 'flowbite-react';
@@ -99,11 +100,11 @@ function ModalTest() {
                     </div>
 
                 </Modal.Body>
-                <Modal.Footer>
-                    <Button onClick={() => setOpenModal(false)}>I accept</Button>
-                    <Button color="gray" onClick={() => setOpenModal(false)}>
-                        Decline
-                    </Button>
+                <Modal.Footer className="self-end">
+                    <button onClick={() => setOpenModal(false)} className="flex items-center space-x-2  px-5 py-1 rounded bg-mainColor text-white text-[14px]"><LuLogIn />
+                        <span>save</span>
+                    </button>
+
                 </Modal.Footer>
             </Modal>
         </>
