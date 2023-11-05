@@ -1,10 +1,10 @@
 import './App.css'
-import ModalTest from './modals/P'
+import Cls from './modals/Cls'
 
 function App() {
   return (
     <>
-      <ModalTest />
+      <Cls />
     </>
   )
 }
